@@ -10,6 +10,7 @@ import (
 
 func jsonResponse(w http.ResponseWriter) {
 	w.Header().Set("Content-type", "application/json")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 }
 
 func generateConnectionID() string {
